@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALINOUSKI | Coming Soon</title>
+    <style>
+        /* Основные стили страницы */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            /* Тот самый жёлтый цвет с твоего макета */
+            background-color: #F2E34C; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Стиль логотипа */
+        .logo {
+            max-width: 300px; /* Отрегулируй под себя */
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        /* Блок с Instagram */
+        .instagram-link {
+            text-decoration: none;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .instagram-link:hover {
+            opacity: 0.7;
+        }
+
+        .insta-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 8px;
+        }
+
+        .insta-handle {
+            font-size: 14px;
+            letter-spacing: 3px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    <style>
+    body, html {
+        margin: 0; padding: 0; height: 100%; width: 100%;
+        background-color: #F2E34C;
+        font-family: 'Segoe UI', sans-serif;
+        display: flex; justify-content: center; align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Эффект шума на фоне */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: url('https://grainy-gradients.vercel.app/noise.svg');
+        opacity: 0.15;
+        pointer-events: none;
+    }
+
+    .container { text-align: center; z-index: 1; }
+
+    /* Глитч-анимация для лого */
+    .logo {
+        max-width: 350px;
+        height: auto;
+        margin-bottom: 30px;
+        filter: drop-shadow(0 0 2px rgba(0,0,0,0.2));
+        animation: glitch 3s infinite;
+    }
+
+    @keyframes glitch {
+        0% { transform: translate(0); }
+        2% { transform: translate(-2px, 1px); }
+        4% { transform: translate(2px, -1px); }
+        6% { transform: translate(0); }
+        100% { transform: translate(0); }
+    }
+
+    .instagram-link {
+        text-decoration: none; color: #000;
+        display: flex; flex-direction: column; align-items: center;
+        transition: transform 0.2s ease;
+    }
+
+    .instagram-link:hover { transform: scale(1.1); }
+
+    .insta-icon { width: 32px; height: 32px; margin-bottom: 8px; }
+
+    .insta-handle {
+        font-size: 14px; letter-spacing: 4px; font-weight: 800;
+        text-transform: uppercase;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="KALINOUSKI Logo" class="logo">
+
+        <a href="https://www.instagram.com/kalinouski.shop" target="_blank" class="instagram-link">
+            <svg class="insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span class="insta-handle">KALINOUSKI.SHOP</span>
+        </a>
+    </div>
+
+</body>
+</html>
