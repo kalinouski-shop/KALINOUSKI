@@ -1,122 +1,107 @@
-
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KALINOUSKI | Coming Soon</title>
+
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <meta name="description" content="KALINOUSKI — лимитированная серия streetwear мерча. Скоро открытие официального онлайн-магазина. Следите за обновлениями в Instagram.">
+    <meta name="keywords" content="Kalinouski, streetwear, мерч, одежда, дизайн, онлайн-магазин, лимитированная серия">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KALINOUSKI | Скоро открытие">
+    <meta property="og:description" content="Официальный магазин streetwear бренда KALINOUSKI. Готовим запуск новой коллекции.">
+    <meta property="og:image" content="https://kalinouski.shop/logo.png">
+    <meta property="og:url" content="https://kalinouski.shop">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KALINOUSKI | Coming Soon">
+    <meta name="twitter:description" content="Лимитированный мерч. Скоро в продаже.">
+    <meta name="twitter:image" content="https://kalinouski.shop/logo.png">
+
     <style>
         body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
             width: 100%;
-            background-color: #F2E34C; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
+            background-color: #F2E34C;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex; 
+            justify-content: center; 
             align-items: center;
             overflow: hidden;
+            position: relative;
         }
 
-        .container {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        /* Эффект шума на фоне */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://grainy-gradients.vercel.app/noise.svg');
+            opacity: 0.15;
+            pointer-events: none;
         }
 
+        .container { 
+            text-align: center; 
+            z-index: 1; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+
+        /* Глитч-анимация для лого */
         .logo {
-            max-width: 300px;
+            max-width: 350px;
             height: auto;
             margin-bottom: 30px;
+            filter: drop-shadow(0 0 2px rgba(0,0,0,0.2));
+            animation: glitch 3s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            2% { transform: translate(-2px, 1px); }
+            4% { transform: translate(2px, -1px); }
+            6% { transform: translate(0); }
+            100% { transform: translate(0); }
         }
 
         .instagram-link {
-            text-decoration: none;
+            text-decoration: none; 
             color: #000;
-            display: flex;
-            flex-direction: column;
+            display: flex; 
+            flex-direction: column; 
             align-items: center;
-            transition: opacity 0.3s ease;
+            transition: transform 0.2s ease;
         }
 
-        .instagram-link:hover {
-            opacity: 0.7;
+        .instagram-link:hover { 
+            transform: scale(1.1); 
+            text-decoration: underline;
         }
 
-        .insta-icon {
-            width: 32px;
-            height: 32px;
-            margin-bottom: 8px;
+        .insta-icon { 
+            width: 32px; 
+            height: 32px; 
+            margin-bottom: 8px; 
         }
 
         .insta-handle {
-            font-size: 14px;
-            letter-spacing: 3px;
-            font-weight: 600;
+            font-size: 14px; 
+            letter-spacing: 4px; 
+            font-weight: 800;
             text-transform: uppercase;
         }
-    <style>
-    body, html {
-        margin: 0; padding: 0; height: 100%; width: 100%;
-        background-color: #F2E34C;
-        font-family: 'Segoe UI', sans-serif;
-        display: flex; justify-content: center; align-items: center;
-        overflow: hidden;
-        position: relative;
-    }
-
-    body::before {
-        content: "";
-        position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        background: url('https://grainy-gradients.vercel.app/noise.svg');
-        opacity: 0.15;
-        pointer-events: none;
-    }
-
-    .container { text-align: center; z-index: 1; }
-
-    .logo {
-        max-width: 350px;
-        height: auto;
-        margin-bottom: 30px;
-        filter: drop-shadow(0 0 2px rgba(0,0,0,0.2));
-        animation: glitch 3s infinite;
-    }
-
-    @keyframes glitch {
-        0% { transform: translate(0); }
-        2% { transform: translate(-2px, 1px); }
-        4% { transform: translate(2px, -1px); }
-        6% { transform: translate(0); }
-        100% { transform: translate(0); }
-    }
-
-    .instagram-link {
-        text-decoration: none; color: #000;
-        display: flex; flex-direction: column; align-items: center;
-        transition: transform 0.2s ease;
-    }
-
-    .instagram-link:hover { transform: scale(1.1); }
-
-    .insta-icon { width: 32px; height: 32px; margin-bottom: 8px; }
-
-    .insta-handle {
-        font-size: 14px; letter-spacing: 4px; font-weight: 800;
-        text-transform: uppercase;
-    }
-</style>
+    </style>
 </head>
 <body>
-
     <div class="container">
         <img src="logo.png" alt="KALINOUSKI Logo" class="logo">
-
         <a href="https://www.instagram.com/kalinouski.shop" target="_blank" class="instagram-link">
             <svg class="insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -126,6 +111,5 @@
             <span class="insta-handle">KALINOUSKI.SHOP</span>
         </a>
     </div>
-
 </body>
 </html>
